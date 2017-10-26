@@ -1,9 +1,17 @@
+// All
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+}
+
 /**
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
+  border-bottom: 1px solid $border-color;
   min-height: $header-height;
 
   // Positioning context for the mobile navigation icon
@@ -181,6 +189,14 @@
  */
 .page-content {
   padding: $spacing-unit 0;
+  margin-right: 20vh;
+  margin-left: 300px;
+  padding-top: $header-height;
+  border-right: 1px solid $border-color;
+
+  > .wrapper {
+    margin-top: 40px;
+  }
 }
 
 .page-heading {

@@ -18,7 +18,7 @@ $base-font-family: 'Rubik', Arial, sans-serif;
  */
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-  color: $text-color;
+  color: $primary-color;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -74,6 +74,7 @@ ul, ol {
 }
 
 li {
+  list-style-type: none;
   > ul,
   > ol {
     margin-bottom: 0;
@@ -165,8 +166,6 @@ pre {
   max-width: 90%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
   @extend %clearfix;
 
   @include media-query($on-laptop) {
