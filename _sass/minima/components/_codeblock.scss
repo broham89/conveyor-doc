@@ -1,0 +1,15 @@
+// Styles for everything located in a codeblock
+
+pre, figure code {
+  font-family: 'Cousine', monospace;
+  background-color: #0e1635;
+  color: white;
+}
+
+.highlight .k {
+  color: white;
+}
+
+.highlight .nf {
+  color: grey;
+}
